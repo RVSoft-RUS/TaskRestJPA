@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface UserService {
     User find(Long id);
 
-    User save(@RequestBody User user);
+    User create(@RequestBody User user);
 
     void delete(Long id);
+
+    User getCurrentUser();
 }
